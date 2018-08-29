@@ -1,11 +1,8 @@
-brew tap caskroom/cask
-
 brew cask install google-chrome
 brew cask install spectacle
 brew cask install dropbox
 brew cask install iterm2
 brew cask install github
-brew cask install heroku-toolbelt
 brew cask install visual-studio-code
 brew cask install atom
 brew cask install sublime-text
@@ -13,7 +10,6 @@ brew cask install alfred
 brew cask install caffeine
 brew cask install joplin
 brew cask install docker
-brew cask install google-drive
 brew cask install google-hangouts
 brew cask install flux
 brew cask install cheatsheet
@@ -38,5 +34,10 @@ brew cask install steam
 brew cask install spotmenu
 brew cask install flycut
 brew cask install numi
-brew cask install lastpass
+brew cask install lastpass-cli --with-pinentry
 brew cask install rescuetime
+brew cask install gitify
+brew cask install java
+brew cask install intellij-idea
+brew cask install istat-menus
+brew cask install little-snitch
