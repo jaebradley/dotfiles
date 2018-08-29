@@ -1,0 +1,9 @@
+# Change file extensions recursively in current directory
+#
+#   chng-ext erb haml
+
+function chng-ext() {
+  foreach f (**/*.$1)
+    mv $f $f:r.$2
+  end
+}

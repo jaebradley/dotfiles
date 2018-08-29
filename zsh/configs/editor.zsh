@@ -1,0 +1,1 @@
+export VISUAL=vim
