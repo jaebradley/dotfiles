@@ -15,3 +15,11 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey "^Q" push-line-or-edit
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
+bindkey "^[f" forward-word
+bindkey "^[b" backward-word
+bindkey "^[d" delete-word
+
+# bind UP and DOWN arrow keys for history search
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
