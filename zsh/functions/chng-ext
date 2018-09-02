@@ -2,8 +2,6 @@
 #
 #   chng-ext erb haml
 
-function chng-ext() {
-  foreach f (**/*.$1)
-    mv $f $f:r.$2
-  end
-}
+foreach f (**/*.$1)
+  mv $f $f:r.$2
+end
