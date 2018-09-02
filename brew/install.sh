@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+echo "Installing homebrew packages from $CURRENT_DIRECTORY"
+
+brew install ansiweather
 brew install calc
 brew install cask
 brew install git
@@ -20,3 +25,4 @@ brew install wget
 brew install yarn
 brew install zsh
 brew install zsh-completions
+brew install zsh-syntax-highlighting
