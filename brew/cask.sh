@@ -1,9 +1,12 @@
+#!/usr/bin/env bash
+
 ##### Developer Tools #####
 
 # Miscelaneous
 brew cask install alfred
 brew cask install cakebrew
 brew cask install docker
+brew cask install slack
 
 # Terminal
 brew cask install hyper
@@ -42,6 +45,7 @@ brew cask install firefox
 brew cask install flux
 brew cask install flycut
 brew cask install google-chrome
+brew cask install google-chrome-canary
 brew cask install istat-menus
 brew cask install joplin
 brew cask install kap
@@ -58,14 +62,3 @@ brew cask install spotmenu
 brew cask install the-unarchiver
 brew cask install vanilla
 brew cask install vlc
-
-
-
-
-
-
-
-
-
-
-
