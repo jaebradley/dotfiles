@@ -46,6 +46,7 @@ brew cask install bitbar
 brew cask install cheatsheet
 brew cask install caffeine
 brew cask install dropbox
+brew cask install knock
 brew cask install firefox
 brew cask install flux
 brew cask install flycut

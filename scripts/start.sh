@@ -30,16 +30,5 @@ source "$CURRENT_DIRECTORY/install_mac_cli.sh"
 # Setup Mac
 source "$CURRENT_DIRECTORY/../mac/setup.sh"
 
-# Overwrite .zshrc
-# Install custom plugins
-# Install all functions and scripts into .zshrc
-
-# Overwrite hyper configuration
-# Overwrite mac setup configuration
 # npm install globals
 # Add .gitconfig.local
-# Add ssh config
-# Add gh key
-# add aliases
-# add functions
-# add ansiweatherrc
