@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 brew install calc
 brew install cask
 brew install git
