@@ -10,6 +10,7 @@ brew install calc
 brew install cask
 brew install coreutils
 brew install git
+brew install git-standup
 brew install go
 brew install htop
 brew install httpie
@@ -19,6 +20,7 @@ brew install node
 brew install the_silver_searcher
 brew install tmux
 brew install tree
+brew install peco
 brew install pgcli
 brew install postgresql
 brew install python
