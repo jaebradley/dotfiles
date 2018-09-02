@@ -24,6 +24,12 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 # Install oh-my-zsh
 source "$CURRENT_DIRECTORY/install_zsh.sh"
 
+# Install mac-cli
+source "$CURRENT_DIRECTORY/install_mac_cli.sh"
+
+# Setup Mac
+source "$CURRENT_DIRECTORY/../mac/setup.sh"
+
 # Overwrite .zshrc
 # Install custom plugins
 # Install all functions and scripts into .zshrc
@@ -31,8 +37,6 @@ source "$CURRENT_DIRECTORY/install_zsh.sh"
 # Overwrite hyper configuration
 # Overwrite mac setup configuration
 # npm install globals
-# Setup psql config
-# Overwrite git config
 # Add .gitconfig.local
 # Add ssh config
 # Add gh key
