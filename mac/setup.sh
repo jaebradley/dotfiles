@@ -523,6 +523,12 @@ defaults write com.apple.ActivityMonitor DiskGraphType -int 1
 defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
 
 ###############################################################################
+# Flycut.app                                                  							  #
+###############################################################################
+
+defaults write com.generalarcade.flycut StartAtLogin -bool true
+
+###############################################################################
 # Google Chrome & Google Chrome Canary                                        #
 ###############################################################################
 
@@ -540,11 +546,18 @@ defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
 ###############################################################################
+# Spectacle.app                                                  							#
+###############################################################################
+
+defaults write com.divisiblebyzero.Spectacle StartAtLogin -bool true
+defaults write com.divisiblebyzero.Spectacle ShowPrefsOnNextStart -bool false
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
+	"Dock" "Finder" "Flycut" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
 	"Opera" "Photos" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
 	"Transmission" "Tweetbot" "Twitter" "iCal"; do
 	killall "${app}" &> /dev/null
