@@ -1,0 +1,10 @@
+{
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "vim.disableExtension": true,
+  "window.zoomLevel": 0,
+}

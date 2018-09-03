@@ -31,4 +31,6 @@ source "$CURRENT_DIRECTORY/install_mac_cli.sh"
 source "$CURRENT_DIRECTORY/../mac/setup.sh"
 
 # npm install globals
+source "$CURRENT_DIRECTORY/../npm/install.sh"
+
 # Add .gitconfig.local
