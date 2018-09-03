@@ -29,6 +29,7 @@ brew cask install insomnia
 brew cask install postman
 
 # GitHub
+brew cask install gitup
 brew cask install gitify
 brew cask install github
 
