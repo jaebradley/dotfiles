@@ -9,6 +9,7 @@ brew install ansiweather
 brew install calc
 brew install cask
 brew install coreutils
+brew install diff-so-fancy
 brew install git
 brew install git-standup
 brew install go

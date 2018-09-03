@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ssh-keygen -t rsa -b 4096 -C "$1";
 echo "Created ssh key"
 

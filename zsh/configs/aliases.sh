@@ -43,3 +43,5 @@ alias bun="bundle"
 alias migrate="rake db:migrate"
 alias rollback="db:rollback"
 alias rs="rspec"
+
+alias weath="ansiweather"
