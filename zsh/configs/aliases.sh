@@ -45,3 +45,6 @@ alias rollback="db:rollback"
 alias rs="rspec"
 
 alias weath="ansiweather"
+
+# hub aliases
+eval "$(hub alias -s)"
