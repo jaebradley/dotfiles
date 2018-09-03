@@ -6,13 +6,13 @@ module.exports = {
   config: {
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
-    updateChannel: 'stable',
+    updateChannel: 'canary',
 
     // default font size in pixels for all tabs
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Meslo LG L DZ for Powerline"',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -97,7 +97,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: 'zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -110,7 +110,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
-    copyOnSelect: false,
+    copyOnSelect: true,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
     defaultSSHApp: true,
@@ -134,7 +134,18 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hypercwd", "hyper-pane", "hyper-search", "hyper-material-theme"],
+  plugins: [
+    'hyper-solarized-dark',
+    "hypercwd",
+    "hyper-pane",
+    "hyper-search",
+    // "hyper-material-theme",
+    "hyperterm-lastpass",
+    "hyper-blink",
+    "hyper-statusline",
+    "hyper-tabs-enhanced",
+    "verminal",
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
@@ -146,4 +157,9 @@ module.exports = {
     // 'window:devtools': 'cmd+alt+o',
   },
   scrollback: 10000,
+  hyperTabs: {
+    tabIconsColored: true,
+    activityColor: 'salmon',
+    closeAlign: 'right',
+  },
 };

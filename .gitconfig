@@ -36,3 +36,5 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[web]
+	browser = google-chrome

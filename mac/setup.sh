@@ -563,3 +563,6 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+echo "Install Pocket from the App Store"
+echo "Install LastPass from the App Store"

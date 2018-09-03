@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
 
+CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+echo "Installing homebrew casks from $CURRENT_DIRECTORY"
+
 ##### Developer Tools #####
 
 # Miscelaneous
 brew cask install alfred
 brew cask install cakebrew
 brew cask install docker
+brew cask install font-hack-nerd-font
+brew cask install graphiql
 brew cask install slack
 
 # Terminal
@@ -41,6 +47,7 @@ brew cask install bitbar
 brew cask install cheatsheet
 brew cask install caffeine
 brew cask install dropbox
+brew cask install knock
 brew cask install firefox
 brew cask install flux
 brew cask install flycut
