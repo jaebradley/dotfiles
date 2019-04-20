@@ -1,11 +1,16 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+export PATH=:$PATH:$HOME/bin:/usr/local/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/Code.app/Contents/Resources/app/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Cask Application Setting
+
+# https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -31,8 +36,21 @@ HYPHEN_INSENSITIVE="true"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status node_version background_jobs history time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  context
+  root_indicator
+  dir
+  vcs
+)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+  vi_mode
+  status
+  node_version
+  rbenv
+  time
+  ram
+  battery
+)
 
 #POWERLEVEL9K_TIME_FORMAT="%D{%H:%M %m.%d.%y}"
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M:%S}"
@@ -68,6 +86,7 @@ plugins=(
   brew
   calc
   colored-man-pages
+  docker
   dotenv
   encode64
   git
@@ -131,3 +150,9 @@ source $ZSH_SCRIPTS/tabtab-source-yarn-package.sh
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/etc/profile.d/z.sh
+
+# Virtualenv Settings
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+source /usr/local/bin/virtualenvwrapper.sh

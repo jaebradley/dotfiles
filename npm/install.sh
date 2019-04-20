@@ -14,8 +14,8 @@ npm install -g \
   getmethefuckthere \
   medium-cli \
   emoji-search-cli \
-  fruit-cli \
+  @jaebradley/fruit \
   urban-dictionary-cli \
   medium-cli \
-  wakatime-cli \
+  @jaebradley/wakatime-cli \
   git-workflow-cli \

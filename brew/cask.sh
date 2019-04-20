@@ -4,6 +4,11 @@ CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 echo "Installing homebrew casks from $CURRENT_DIRECTORY"
 
+# https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+echo "Set application path to /Applications"
+
 ##### Developer Tools #####
 
 # Miscelaneous
@@ -42,11 +47,15 @@ brew cask install visual-studio-code
 brew cask install atom
 brew cask install sublime-text
 
+# Docker
+brew cask install docker
+
 ##### Essential Applications #####
 
 brew cask install bitbar
 brew cask install cheatsheet
 brew cask install caffeine
+brew cask install devdocs
 brew cask install dropbox
 brew cask install knock
 brew cask install firefox
@@ -57,7 +66,6 @@ brew cask install google-chrome-canary
 brew cask install istat-menus
 brew cask install joplin
 brew cask install kap
-brew cask install lastpass-cli --with-pinentry
 brew cask install numi
 brew cask install little-snitch
 brew cask install rescuetime
