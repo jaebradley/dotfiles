@@ -9,3 +9,6 @@ brew tap homebrew/cask-versions
 
 # https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
 brew tap caskroom/fonts
+
+# https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+brew tap heroku/brew

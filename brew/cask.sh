@@ -4,7 +4,7 @@ CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 echo "Installing homebrew casks from $CURRENT_DIRECTORY"
 
-// https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
+# https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 echo "Set application path to /Applications"
@@ -62,7 +62,6 @@ brew cask install google-chrome-canary
 brew cask install istat-menus
 brew cask install joplin
 brew cask install kap
-brew cask install lastpass-cli --with-pinentry
 brew cask install numi
 brew cask install little-snitch
 brew cask install rescuetime
