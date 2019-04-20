@@ -86,6 +86,7 @@ plugins=(
   brew
   calc
   colored-man-pages
+  docker
   dotenv
   encode64
   git

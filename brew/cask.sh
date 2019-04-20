@@ -47,6 +47,9 @@ brew cask install visual-studio-code
 brew cask install atom
 brew cask install sublime-text
 
+# Docker
+brew cask install docker
+
 ##### Essential Applications #####
 
 brew cask install bitbar

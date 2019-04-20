@@ -12,6 +12,8 @@ brew install coreutils
 brew install diff-so-fancy
 # https://github.com/junegunn/fzf#using-homebrew-or-linuxbrew
 brew install fzf
+brew install docker-machine
+brew install docker-compose
 brew install git
 brew install git-standup
 brew install go
