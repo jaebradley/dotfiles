@@ -9,7 +9,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Cask Application Setting
 
-// https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
+# https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # nvm
@@ -150,3 +150,9 @@ source $ZSH_SCRIPTS/tabtab-source-yarn-package.sh
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/etc/profile.d/z.sh
+
+# Virtualenv Settings
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+source /usr/local/bin/virtualenvwrapper.sh
