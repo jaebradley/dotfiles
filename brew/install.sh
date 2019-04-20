@@ -10,6 +10,8 @@ brew install calc
 brew install cask
 brew install coreutils
 brew install diff-so-fancy
+# https://github.com/junegunn/fzf#using-homebrew-or-linuxbrew
+brew install fzf
 brew install git
 brew install git-standup
 brew install go
@@ -43,3 +45,9 @@ echo "Installing heroku autocomplete"
 
 heroku update
 heroku autocomplete
+
+# Installing key bindings and fuzzy completion for fzf
+
+echo "Installing key bindings and fuzzy completion for fzf"
+
+$(brew --prefix)/opt/fzf/install
