@@ -6,4 +6,6 @@ echo "Checking homebrew tap from $CURRENT_DIRECTORY"
 
 # Do this before executing cask.sh
 brew tap homebrew/cask-versions
+
+# https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
 brew tap caskroom/fonts
