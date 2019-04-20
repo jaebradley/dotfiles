@@ -7,6 +7,11 @@ export ZSH=$HOME/.oh-my-zsh
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Cask Application Setting
+
+// https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

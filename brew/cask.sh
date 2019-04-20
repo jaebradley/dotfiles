@@ -4,6 +4,11 @@ CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 echo "Installing homebrew casks from $CURRENT_DIRECTORY"
 
+// https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+echo "Set application path to /Applications"
+
 ##### Developer Tools #####
 
 # Miscelaneous
