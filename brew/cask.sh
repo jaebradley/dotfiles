@@ -55,6 +55,7 @@ brew cask install docker
 brew cask install bitbar
 brew cask install cheatsheet
 brew cask install caffeine
+brew cask install devdocs
 brew cask install dropbox
 brew cask install knock
 brew cask install firefox
