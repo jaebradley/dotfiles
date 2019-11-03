@@ -1,5 +1,7 @@
+export TERM="xterm-256color"
+
 # If you come from bash you might have to change your $PATH.
-export PATH=:$PATH:$HOME/bin:/usr/local/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/Code.app/Contents/Resources/app/bin
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -7,15 +9,27 @@ export ZSH=$HOME/.oh-my-zsh
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Cask Application Setting
+# Postgres App
+export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 
-# https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#options
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+# env variables
+source $HOME/.env
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+source /usr/local/bin/virtualenvwrapper.sh
 
 # zsh configs
 ZSH_CONFIGS=$HOME/zsh/configs
@@ -35,6 +49,7 @@ HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
+POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
   context
@@ -86,13 +101,11 @@ plugins=(
   brew
   calc
   colored-man-pages
-  docker
   dotenv
   encode64
   git
-  github
+  gitfast
   httpie
-  jira
   jsontools
   mylocation
   npm
@@ -103,7 +116,6 @@ plugins=(
   rake
   rbenv
   ruby
-  rvm
   urltools
   vi-mode
   web-search
@@ -117,7 +129,6 @@ plugins=(
 )
 
 cdpath=(
-  $HOME/groove
   $HOME/projects
 )
 
@@ -126,7 +137,7 @@ fpath=(
   $fpath
 )
 
-autoload -U compinit
+autoload -Uz compinit && compinit
 autoload -U add-zsh-hook
 autoload -U $ZSH_FUNCTIONS/*(:t)
 
@@ -151,8 +162,9 @@ source $ZSH_SCRIPTS/tabtab-source-yarn-package.sh
 source $ZSH/oh-my-zsh.sh
 source /usr/local/etc/profile.d/z.sh
 
-# Virtualenv Settings
+source $HOME/.env
 
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-source /usr/local/bin/virtualenvwrapper.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# added by travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
