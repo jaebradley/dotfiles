@@ -4,6 +4,7 @@ CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 echo "Installing homebrew packages from $CURRENT_DIRECTORY"
 
+brew install vim
 brew install ack
 brew install ansiweather
 brew install calc

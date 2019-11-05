@@ -6,6 +6,10 @@ CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 echo "Current directory is $CURRENT_DIRECTORY"
 
+# Install xcode command-line tools
+echo "Installing xcode command line tools"
+xcode-select --install
+
 # Install homebrew
 echo "Installing homebrew"
 source "$CURRENT_DIRECTORY/install_homebrew.sh"
