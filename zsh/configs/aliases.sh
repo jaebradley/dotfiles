@@ -1,5 +1,5 @@
 # Unix
-alias ls='gls -AFh ${colorflag} --group-directories-first'
+alias ls='gls -AFh --color=always --group-directories-first'
 alias lsd='ls -l | grep "^d"' # only directories
 alias ll="ls -al"
 alias ln="ln -v"
