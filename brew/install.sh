@@ -9,6 +9,7 @@ brew install ack
 brew install ansiweather
 brew install calc
 brew install cask
+# There are aliases that depend on coreutils
 brew install coreutils
 brew install diff-so-fancy
 # https://github.com/junegunn/fzf#using-homebrew-or-linuxbrew

@@ -1,3 +1,9 @@
+# Set CLI colors on mac
+export CLICOLOR=1
+
+# Display directories as lightblue when using ls
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 export TERM="xterm-256color"
 
 # If you come from bash you might have to change your $PATH.
