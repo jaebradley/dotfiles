@@ -18,9 +18,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Postgres App
 export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 
-# env variables
-source $HOME/.env
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -105,7 +102,6 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(
   bundler
   brew
-  calc
   colored-man-pages
   dotenv
   encode64
@@ -130,8 +126,8 @@ plugins=(
   you-should-use
   zsh-autosuggestions
   zsh-completions
-  zsh-plugin-rails
   zsh-syntax-highlighting
+  zsh-z
 )
 
 cdpath=(
@@ -166,9 +162,6 @@ source $ZSH_SCRIPTS/rbenv-init.sh
 source $ZSH_SCRIPTS/tabtab-source-yarn-package.sh
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/etc/profile.d/z.sh
-
-source $HOME/.env
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

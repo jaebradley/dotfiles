@@ -8,3 +8,5 @@ git clone https://github.com/KasperChristensen/mylocation.git ${ZSH_CUSTOM:-~/.o
 git clone https://github.com/zlsun/solarized-man.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/solarized-man
 git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/you-should-use
 git clone https://github.com/bhilburn/powerlevel9k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
+git clone https://github.com/KasperChristensen/mylocation.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/mylocation
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
