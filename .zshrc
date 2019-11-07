@@ -103,23 +103,30 @@ plugins=(
   bundler
   brew
   colored-man-pages
+  colorize
   dotenv
   encode64
+  golang
   git
   gitfast
   httpie
   jsontools
   mylocation
   npm
+  nvm
   osx
   pip
   python
   rails
   rake
   rbenv
+  redis-cli
   ruby
   urltools
   vi-mode
+  virtualenv
+  virtualenvwrapper
+  vscode
   web-search
   wd
   yarn
