@@ -8,7 +8,10 @@ echo "Checking homebrew tap from $CURRENT_DIRECTORY"
 brew tap homebrew/cask-versions
 
 # https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts 
 
 # https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 brew tap heroku/brew
+
+# https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#macos-with-homebre
+brew tap sambadevi/powerlevel9k

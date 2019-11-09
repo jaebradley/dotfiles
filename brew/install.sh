@@ -34,6 +34,8 @@ brew install tree
 brew install peco
 brew install pgcli
 brew install postgresql
+# https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#macos-with-homebrew
+brew install powerlevel9k
 brew install python
 brew install rbenv
 brew install wget
