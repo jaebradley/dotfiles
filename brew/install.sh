@@ -36,7 +36,19 @@ brew install pgcli
 brew install postgresql
 # https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#macos-with-homebrew
 brew install powerlevel9k
+
+### PYTHON ###
+# uninstall python / python 2 and install python 3 and set as default "python"
+brew uninstall --ignore-dependencies python
+brew uninstall --ignore-dependencies python2
+brew uninstall --ignore-dependencies python3
 brew install python
+brew unlink python && brew link python
+brew unlink python3 && brew link python3
+sudo ln -s /usr/local/bin/python3 /usr/local/bin/python
+sudo ln -s /usr/local/bin/pip3 /usr/local/bin/pip
+###
+
 brew install rbenv
 brew install wget
 brew install yarn
