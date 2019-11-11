@@ -419,6 +419,9 @@ node_modules/
 
 *.gem
 *.rbc
+/.config
+### https://pqrs.org/osx/karabiner/json.html
+!/.config/karabiner/karabiner.json
 /coverage/
 /InstalledFiles
 /pkg/
