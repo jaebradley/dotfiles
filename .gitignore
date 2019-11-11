@@ -419,7 +419,6 @@ node_modules/
 
 *.gem
 *.rbc
-/.config
 /coverage/
 /InstalledFiles
 /pkg/
