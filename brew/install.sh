@@ -28,6 +28,7 @@ brew install jq
 # https://github.com/lastpass/lastpass-cli#installing-on-os-x
 brew install lastpass-cli --with-pinentry
 brew install node
+brew install neovim
 brew install the_silver_searcher
 brew install tmux
 brew install tree
