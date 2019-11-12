@@ -30,6 +30,10 @@ source "$CURRENT_DIRECTORY/../brew/cask.sh"
 echo "Installing nvm"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
+# Install vim plugins
+echo "Installing vim plugins"
+source "$CURRENT_DIRECTORY/install_vim_plugins.sh"
+
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
 source "$CURRENT_DIRECTORY/install_zsh.sh"
