@@ -15,3 +15,6 @@ brew tap heroku/brew
 
 # https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#macos-with-homebre
 brew tap sambadevi/powerlevel9k
+
+# https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+brew tap mongodb/brew

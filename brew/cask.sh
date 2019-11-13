@@ -24,7 +24,6 @@ brew cask install hyper
 brew cask install iterm2
 
 # Databases
-brew cask install mongodb
 brew cask install postico
 brew cask install psequel
 
