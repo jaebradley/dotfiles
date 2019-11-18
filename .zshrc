@@ -70,6 +70,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
   vi_mode
   status
   node_version
+  virtualenv
   rbenv
   time
   ram
