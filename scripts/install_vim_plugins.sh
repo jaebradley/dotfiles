@@ -35,6 +35,9 @@ git clone git@github.com:tpope/vim-surround.git
 # https://github.com/dense-analysis/ale
 git clone git@github.com:dense-analysis/ale.git
 
+# https://github.com/scrooloose/nerdtree
+git clone git@github.com:scrooloose/nerdtree.git
+
 # https://github.com/scrooloose/nerdcommenter
 git clone git@github.com:scrooloose/nerdcommenter.git
 
