@@ -76,11 +76,18 @@ set clipboard=unnamed
 " Set leader to space
 let mapleader =" "
 
+" Set suffixes to search when using gf
+set suffixesadd=".java,.py,.json,.js,.jsx,.rb,.md"
+
 " PLUGINS
 
 " NERDTree
 " https://github.com/scrooloose/nerdtree
 autocmd vimenter * NERDTree
+
+" Allow nerdtree to show hidden files
+" https://stackoverflow.com/a/5057406/5225575
+let NERDTreeShowHidden=1
 
 " ale
 " https://github.com/dense-analysis/ale#usage
