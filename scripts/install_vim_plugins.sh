@@ -62,3 +62,7 @@ git clone git@github.com:honza/vim-snippets.git
 # http://ctrlpvim.github.io/ctrlp.vim/#installation
 # Add ctrlp to start directory instead of bundle directory like in documentation
 git clone git@github.com:ctrlpvim/ctrlp.vim.git
+
+# https://github.com/wakatime/vim-wakatime
+git clone git@github.com:wakatime/vim-wakatime.git
+
