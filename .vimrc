@@ -85,9 +85,24 @@ set suffixesadd=".java,.py,.json,.js,.jsx,.rb,.md"
 " https://github.com/scrooloose/nerdtree
 autocmd vimenter * NERDTree
 
+" Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
+
+" Update Nerdtree UI
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+
 " Allow nerdtree to show hidden files
 " https://stackoverflow.com/a/5057406/5225575
 let NERDTreeShowHidden=1
+
+" Close Nerdtree automatically opening a file for editing
+let NERDTreeQuitOnOpen=1
+
+" Add shortcut to toggle Nerdtree
+" https://vi.stackexchange.com/a/9968
+nmap <F6> :NERDTreeToggle<CR>
+
 
 " ale
 " https://github.com/dense-analysis/ale#usage
@@ -104,4 +119,3 @@ set runtimepath^=~/.vim/pack/plugins/start/ctrlp.vim
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
-
