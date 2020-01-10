@@ -50,6 +50,9 @@ brew unlink python && brew link python
 brew unlink python3 && brew link python3
 sudo ln -s /usr/local/bin/python3 /usr/local/bin/python
 sudo ln -s /usr/local/bin/pip3 /usr/local/bin/pip
+# Install virtualenvwrapper or else sourcing virtualenv file in .zshrc will lead to error
+pip3 virtualenvwrapper
+
 ###
 
 brew install rbenv
