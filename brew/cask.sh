@@ -17,6 +17,7 @@ brew cask install cakebrew
 brew cask install docker
 brew cask install font-hack-nerd-font
 brew cask install graphiql
+brew cask install lastpass
 brew cask install slack
 
 # Terminal
