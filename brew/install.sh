@@ -38,6 +38,7 @@ brew install peco
 brew install pgcli
 brew install postgresql
 # https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#macos-with-homebrew
+brew tap sambadevi/powerlevel9k
 brew install powerlevel9k
 
 ### PYTHON ###
