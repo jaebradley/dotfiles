@@ -48,3 +48,6 @@ alias weath="ansiweather"
 
 # hub aliases
 eval "$(hub alias -s)"
+
+# Look at files in git commit
+alias gcfiles='git diff-tree --no-commit-id --name-status -r'
