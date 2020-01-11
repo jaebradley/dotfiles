@@ -1,4 +1,7 @@
-location:San Francisco,California
-fetch_cmd:ftp -V -o -
-units:impoerial
+location:Boston,US
+fetch_cmd:curl
+units:imperial
 show_daylight:true
+symbols:true
+forecast:5
+background:\033[0m\
