@@ -28,6 +28,8 @@ brew install jq
 # https://github.com/lastpass/lastpass-cli#installing-on-os-x
 brew install lastpass-cli --with-pinentry
 # https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+# Ensure to tap mongodb before install
+brew tap mongodb/brew
 brew install mongodb-community@4.2
 brew install node
 brew install neovim

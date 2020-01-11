@@ -13,5 +13,3 @@ brew tap homebrew/cask-fonts
 # https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 brew tap heroku/brew
 
-# https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
-brew tap mongodb/brew
