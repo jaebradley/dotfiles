@@ -67,6 +67,7 @@ brew cask install istat-menus
 brew cask install joplin
 brew cask install kap
 brew cask install karabiner-elements
+brew cask install keycastr
 brew cask install numi
 brew cask install little-snitch
 brew cask install rescuetime
