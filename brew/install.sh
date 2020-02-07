@@ -34,6 +34,7 @@ brew install mongodb-community@4.2
 brew install node
 brew install neovim
 brew install the_silver_searcher
+brew install tldr
 brew install tmux
 brew install tree
 brew install peco
