@@ -141,6 +141,7 @@ plugins=(
   zsh-autosuggestions
   zsh-completions
   zsh-syntax-highlighting
+  zsh-wakatime
   zsh-z
 )
 
