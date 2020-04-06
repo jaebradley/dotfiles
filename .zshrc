@@ -32,6 +32,9 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
+# golang
+export GOPATH=$HOME/go_workspaces
+
 source /usr/local/bin/virtualenvwrapper.sh
 
 # zsh configs
