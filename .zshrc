@@ -34,6 +34,8 @@ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
 # golang
 export GOPATH=$HOME/go_workspaces
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 
 source /usr/local/bin/virtualenvwrapper.sh
 
