@@ -64,6 +64,10 @@ set relativenumber
 cnoremap kj <C-C>
 cnoremap jk <C-C>
 
+" remap jk and kj to escape
+inoremap jk <esc>
+inoremap kj <esc>
+
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
 set shiftwidth=2
