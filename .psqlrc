@@ -33,5 +33,10 @@
 
 -- Shortcut to see PostgreSQL version
 \set version 'SELECT version();'
+
+-- Styles
+\pset linestyle unicode
+\pset border 2
+
 \unset QUIET
 
