@@ -3,26 +3,40 @@
 
 -- Don't display the "helpful" message on startup.
 \set QUIET 1
+
+-- When querying, `null` values are returned as a blank - would rather return the value `NULL`
 \pset null '[NULL]'
 
--- http://www.postgresql.org/docs/9.3/static/app-psql.html#APP-PSQL-PROMPTING
-\set PROMPT1 '%[%033[1m%]%M %n@%/%R%[%033[0m%]%# '
+-- FROM https://www.digitalocean.com/community/tutorials/how-to-customize-the-postgresql-prompt-with-psqlrc-on-ubuntu-14-04
+\set PROMPT1 '%M:%[%033[1;31m%]%>%[%033[0m%] %n@%/%R%#%x '
+
 -- PROMPT2 is printed when the prompt expects more input, like when you type
 -- SELECT * FROM<enter>. %R shows what type of input it expects.
-\set PROMPT2 '[more] %R > '
+\set PROMPT2 '%M %n@%/%R %# '
 
 -- Show how long each query takes to execute
 \timing
 
 -- Use best available output format
 \x auto
+
+-- Get verbose error reports
 \set VERBOSITY verbose
+
+-- Set history length
+\set HISTSIZE 2000
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTCONTROL ignoredups
+
+-- SQL keyword auto completion works for either uppercase or lowercase
 \set COMP_KEYWORD_CASE upper
+
+-- Shortcut to see PostgreSQL version
+\set version 'SELECT version();'
+
+-- Styles
+\pset linestyle unicode
+\pset border 2
+
 \unset QUIET
 
--- psql can't check for a file's existence, so we'll provide an empty local
--- file that users can override with their custom dotfiles. To set your own
--- personal settings, place your own file in ~/.psqlrc.local
-\i ~/.psqlrc.local
