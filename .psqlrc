@@ -12,7 +12,7 @@
 
 -- PROMPT2 is printed when the prompt expects more input, like when you type
 -- SELECT * FROM<enter>. %R shows what type of input it expects.
-\set PROMPT2 '%M %n@%/%R %# '
+\set PROMPT2 '[more] %M %n@%/%R %# '
 
 -- Show how long each query takes to execute
 \timing
@@ -25,7 +25,11 @@
 
 -- Set history length
 \set HISTSIZE 2000
+
+-- Use a separate history file per-database
 \set HISTFILE ~/.psql_history- :DBNAME
+
+-- If a command is run more than once in a row, only store it once in history
 \set HISTCONTROL ignoredups
 
 -- SQL keyword auto completion works for either uppercase or lowercase
