@@ -7,6 +7,7 @@ echo "Installing homebrew packages from $CURRENT_DIRECTORY"
 brew install vim
 brew install ack
 brew install ansiweather
+brew install autojump
 brew install calc
 brew install cask
 # There are aliases that depend on coreutils
