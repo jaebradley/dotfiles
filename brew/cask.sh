@@ -26,7 +26,6 @@ brew install --cask iterm2
 
 # Databases
 brew install --cask postico
-brew install --cask psequel
 
 # HTTP
 brew install --cask charles

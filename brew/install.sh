@@ -20,6 +20,7 @@ brew install docker-compose
 brew install git
 brew install git-standup
 brew install go
+brew link --overwrite go
 # https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 brew install heroku/brew/heroku
 brew install htop
@@ -27,7 +28,7 @@ brew install httpie
 brew install hub
 brew install jq
 # https://github.com/lastpass/lastpass-cli#installing-on-os-x
-brew install lastpass-cli --with-pinentry
+brew install lastpass-cli
 # https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 # Ensure to tap mongodb before install
 brew tap mongodb/brew
@@ -46,17 +47,10 @@ brew tap sambadevi/powerlevel9k
 brew install powerlevel9k
 
 ### PYTHON ###
-# uninstall python / python 2 and install python 3 and set as default "python"
-brew uninstall --ignore-dependencies python
-brew uninstall --ignore-dependencies python2
-brew uninstall --ignore-dependencies python3
+which python && python --version
 brew install python
-brew unlink python && brew link python
-brew unlink python3 && brew link python3
-sudo ln -s /usr/local/bin/python3 /usr/local/bin/python
-sudo ln -s /usr/local/bin/pip3 /usr/local/bin/pip
 # Install virtualenvwrapper or else sourcing virtualenv file in .zshrc will lead to error
-pip3 virtualenvwrapper
+pip virtualenvwrapper
 
 ###
 

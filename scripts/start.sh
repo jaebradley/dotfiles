@@ -2,7 +2,7 @@
 
 # Exporting present working directory to PATH so can execute scripts
 
-CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+CURRENT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 echo "Current directory is $CURRENT_DIRECTORY"
 
