@@ -12,71 +12,71 @@ echo "Set application path to /Applications"
 ##### Developer Tools #####
 
 # Miscelaneous
-brew cask install alfred
-brew cask install cakebrew
-brew cask install docker
-brew cask install font-hack-nerd-font
-brew cask install graphiql
-brew cask install lastpass
-brew cask install slack
+brew install --cask alfred
+brew install --cask cakebrew
+brew install --cask docker
+brew install --cask font-hack-nerd-font
+brew install --cask graphiql
+brew install --cask lastpass
+brew install --cask slack
 
 # Terminal
-brew cask install hyper
-brew cask install iterm2
+brew install --cask hyper
+brew install --cask iterm2
 
 # Databases
-brew cask install postico
-brew cask install psequel
+brew install --cask postico
+brew install --cask psequel
 
 # HTTP
-brew cask install charles
-brew cask install insomnia
-brew cask install postman
+brew install --cask charles
+brew install --cask insomnia
+brew install --cask postman
 
 # GitHub
-brew cask install gitup
-brew cask install gitify
-brew cask install github
+brew install --cask gitup
+brew install --cask gitify
+brew install --cask github
 
 # Java
-brew cask install intellij-idea
-brew cask install java
+brew install --cask intellij-idea
+brew install --cask java
 
 # Text Editor (pick one or install them all)
-brew cask install visual-studio-code
-brew cask install atom
-brew cask install sublime-text
+brew install --cask visual-studio-code
+brew install --cask atom
+brew install --cask sublime-text
 
 # Docker
-brew cask install docker
+brew install --cask docker
 
 ##### Essential Applications #####
 
-brew cask install bitbar
-brew cask install cheatsheet
-brew cask install caffeine
-brew cask install devdocs
-brew cask install dropbox
-brew cask install knock
-brew cask install firefox
-brew cask install flux
-brew cask install flycut
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install istat-menus
-brew cask install joplin
-brew cask install kap
-brew cask install karabiner-elements
-brew cask install keycastr
-brew cask install numi
-brew cask install little-snitch
-brew cask install rescuetime
-brew cask install skitch
-brew cask install station
-brew cask install steam
-brew cask install spectacle
-brew cask install spotify
-brew cask install spotmenu
-brew cask install the-unarchiver
-brew cask install vanilla
-brew cask install vlc
+brew install --cask bitbar
+brew install --cask cheatsheet
+brew install --cask caffeine
+brew install --cask devdocs
+brew install --cask dropbox
+brew install --cask knock
+brew install --cask firefox
+brew install --cask flux
+brew install --cask flycut
+brew install --cask google-chrome
+brew install --cask google-chrome-canary
+brew install --cask istat-menus
+brew install --cask joplin
+brew install --cask kap
+brew install --cask karabiner-elements
+brew install --cask keycastr
+brew install --cask numi
+brew install --cask little-snitch
+brew install --cask rescuetime
+brew install --cask skitch
+brew install --cask station
+brew install --cask steam
+brew install --cask spectacle
+brew install --cask spotify
+brew install --cask spotmenu
+brew install --cask the-unarchiver
+brew install --cask vanilla
+brew install --cask vlc
