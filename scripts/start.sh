@@ -6,9 +6,30 @@ CURRENT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd 
 
 echo "Current directory is $CURRENT_DIRECTORY"
 
+function installNvm() {
+  # Install / update nvm
+  which nvm
+  local nvmExecutableExists=$?
+  if [[ 1 -eq $nvmExecutableExists ]]; then
+    echo "Installing nvm"
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+    if [[ 0 -ne $? ]]; then echo "unknown error on line ${LINENO}" && exit 255; fi
+  elif [[ 0 -eq $nvmExecutableExists ]];
+    echo "nvm exists"
+  else;
+    echo "unknown error on line ${LINENO}" && exit 255
+  fi
+}
+
 # Install xcode command-line tools
-echo "Installing xcode command line tools"
-xcode-select --install
+path_to_xcode_select="$(which xcode-select)"
+if [[ -x "${path_to_xcode_select}" ]]; then
+  echo "Installing xcode command line tools"
+  xcode-select --install
+  if [[ 0 -ne $? ]]; then echo "unknown error on line ${LINENO}" && exit 255; fi
+else
+  echo "Unable to execute xcode-select" && exit 255
+fi
 
 # Install homebrew
 echo "Installing homebrew"
@@ -26,9 +47,7 @@ source "$CURRENT_DIRECTORY/../brew/tap.sh"
 echo "Checking homebrew casks"
 source "$CURRENT_DIRECTORY/../brew/cask.sh"
 
-# Install / update nvm
-echo "Installing nvm"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+installNvm
 
 # Install vim plugins
 echo "Installing vim plugins"
