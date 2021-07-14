@@ -26,6 +26,7 @@ brew install heroku/brew/heroku
 brew install htop
 brew install httpie
 brew install hub
+brew install java
 brew install jq
 # https://github.com/lastpass/lastpass-cli#installing-on-os-x
 brew install lastpass-cli

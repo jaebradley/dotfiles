@@ -39,7 +39,6 @@ brew install --cask github
 
 # Java
 brew install --cask intellij-idea
-brew install --cask java
 
 # Text Editor (pick one or install them all)
 brew install --cask visual-studio-code
