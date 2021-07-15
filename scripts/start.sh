@@ -25,12 +25,13 @@ function installNvm() {
 
 function installXcodeCommandLineTools() {
   local path_to_xcode_select="$(which xcode-select)"
-  if [[ -x "${path_to_xcode_select}" ]]; then
+  if [[ -x "${path_to_xcode_select}" ]]
+  then
     echo "Installing xcode command line tools"
     local result="${path_to_xcode_select}" --install
     if [[ 0 -ne $? ]]
     then
-      if [[ "${result}" -ne "xcode-select: error: command line tools are already installed, use "Software Update" to install updates" ]]
+      if [[ "${result}" -ne "xcode-select: error: command line tools are already installed, use \"Software Update\" to install updates" ]]
       then
         echo "unknown error on line ${LINENO}" && exit 255
       fi
