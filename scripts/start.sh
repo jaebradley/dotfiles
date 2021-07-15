@@ -28,7 +28,7 @@ function installXcodeCommandLineTools() {
   if [[ -x "${path_to_xcode_select}" ]]
   then
     echo "Installing xcode command line tools"
-    local result="${path_to_xcode_select}" --install
+    local result="${path_to_xcode_select} --install"
     if [[ 0 -ne $? ]]
     then
       if [[ "${result}" -ne "xcode-select: error: command line tools are already installed, use \"Software Update\" to install updates" ]]
