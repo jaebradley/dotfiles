@@ -10,13 +10,14 @@ function installNvm() {
   # Install / update nvm
   which nvm
   local nvmExecutableExists=$?
-  if [[ 1 -eq $nvmExecutableExists ]]; then
+  if [[ 1 -eq $nvmExecutableExists ]]
+  then
     echo "Installing nvm"
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
     if [[ 0 -ne $? ]]; then echo "unknown error on line ${LINENO}" && exit 255; fi
-  elif [[ 0 -eq $nvmExecutableExists ]];
+  elif [[ 0 -eq $nvmExecutableExists ]]
     echo "nvm exists"
-  else;
+  else
     echo "unknown error on line ${LINENO}" && exit 255
   fi
 }
