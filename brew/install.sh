@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-CURRENT_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
-echo "Installing homebrew packages from $CURRENT_DIRECTORY"
-
 brew install vim
 brew install ack
 brew install ansiweather
@@ -66,12 +62,10 @@ brew install zsh-syntax-highlighting
 # https://devcenter.heroku.com/articles/heroku-cli-autocomplete
 
 echo "Installing heroku autocomplete"
-
 heroku update
 heroku autocomplete
 
 # Installing key bindings and fuzzy completion for fzf
 
 echo "Installing key bindings and fuzzy completion for fzf"
-
 $(brew --prefix)/opt/fzf/install
