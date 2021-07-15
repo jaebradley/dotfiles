@@ -23,15 +23,24 @@ function installNvm() {
   fi
 }
 
-# Install xcode command-line tools
-path_to_xcode_select="$(which xcode-select)"
-if [[ -x "${path_to_xcode_select}" ]]; then
-  echo "Installing xcode command line tools"
-  xcode-select --install
-  if [[ 0 -ne $? ]]; then echo "unknown error on line ${LINENO}" && exit 255; fi
-else
-  echo "Unable to execute xcode-select" && exit 255
-fi
+function installXcodeCommandLineTools() {
+  local path_to_xcode_select="$(which xcode-select)"
+  if [[ -x "${path_to_xcode_select}" ]]; then
+    echo "Installing xcode command line tools"
+    local result="${path_to_xcode_select}" --install
+    if [[ 0 -ne $? ]]
+    then
+      if [[ "${result}" -ne "xcode-select: error: command line tools are already installed, use "Software Update" to install updates" ]]
+      then
+        echo "unknown error on line ${LINENO}" && exit 255
+      fi
+    fi
+  else
+    echo "Unable to execute xcode-select" && exit 255
+  fi
+}
+
+installXcodeCommandLineTools
 
 # Install homebrew
 echo "Installing homebrew"
