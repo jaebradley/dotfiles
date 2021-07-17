@@ -14,7 +14,7 @@ function installNvm() {
   then
     echo "Installing nvm"
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-    if [[ 0 -ne $? ]]; then echo "unknown error on line ${LINENO}" && exit 255; fi
+    if [[ 0 -ne $? ]]; then echo "error on line ${LINENO}" && exit 255; fi
   elif [[ 0 -eq $nvmExecutableExists ]]
   then
     echo "nvm exists"
@@ -42,6 +42,10 @@ function installXcodeCommandLineTools() {
 }
 
 installXcodeCommandLineTools
+
+# Create ssh key
+echo "Creating ssh key"
+bash "$CURRENT_DIRECTORY/generate_ssh_key.sh"
 
 # Install homebrew
 echo "Installing homebrew"
@@ -85,6 +89,3 @@ bash "$CURRENT_DIRECTORY/../mac/setup.sh"
 echo "Installing global npm packages"
 bash "$CURRENT_DIRECTORY/../npm/install.sh"
 
-# Create ssh key
-echo "Creating ssh key"
-bash "$CURRENT_DIRECTORY/generate_ssh_key.sh"
