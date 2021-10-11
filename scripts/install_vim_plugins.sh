@@ -66,3 +66,5 @@ git clone git@github.com:ctrlpvim/ctrlp.vim.git
 # https://github.com/wakatime/vim-wakatime
 git clone git@github.com:wakatime/vim-wakatime.git
 
+git clone https://github.com/fatih/vim-go.git
+
