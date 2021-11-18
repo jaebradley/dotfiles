@@ -1,6 +1,8 @@
 #!/bin/bash/
 
 function install_rectangle() {
+  if [[ -d "/Applications/Rectangle.app" ]]; then echo "Rectangle application already exists" && exit 0; fi
+
   curl -IL "https://github.com/rxhanson/Rectangle/releases/download/v0.49/Rectangle0.49.dmg"
   if [[ $? -ne 0 ]]; then echo "Error on line $LINENO" && exit 255; fi
 
